@@ -1,0 +1,58 @@
+{
+	"linked_data_source": {
+							"statements": [
+								{"label": "label", "property": "P1"},
+								{"label": "aliases", "property": "P2"},
+								{"label": "base_URL", "property": "P3"}
+							]
+
+							},
+	"musical_work": {
+						"statements": [
+							{"label": "label", "property": "P1"},
+							{"label": "aliases", "property": "P2"},
+							{"label": "wikidata_QID", "property": "P4"},
+							{"label": "form_of_creative_work", "property": "P7"},
+							{"label": "composer", "property": "P8"},
+							{"label": "arranger", "property": "P9"},
+							{"label": "based_on", "property": "P10"},
+							{"label": "IMSLP_ID","property": "P12"},
+							{"label": "VIAF_ID", "property": "P11"},
+							{"label": "CPDL_ID","property": "P18"}     
+						]
+						},
+	"agent": {
+						"statements": [
+							{"label": "label", "property": "P1"},
+							{"label": "aliases", "property": "P2"},
+							{"label": "wikidata_QID", "property": "P4"},
+							{"label": "instance_of", "property": "P5"},
+							{"label": "image", "property": "P15"},
+							{"label": "gender", "property": "P14"},
+							{"label": "based_on", "property": "P10"},
+							{"label": "IMSLP_ID","property": "P12"},
+							{"label": "VIAF_ID", "property": "P11"},
+							{"label": "RISM_ID","property": "P13"}     
+						]
+						},
+	"concept": {
+							"statements": [
+								{"label": "label", "property": "P1"},
+								{"label": "aliases", "property": "P2"},
+								{"label": "wikidata_QID", "property": "P4"}
+							]
+
+							},
+	"annotation_type": {
+							"statements": [
+								{"label": "label", "property": "P1"},
+								{"label": "aliases", "property": "P2"},
+								{"label": "wikidata_QID", "property": "P4"},
+								{"label": "instance_of", "property": "P5"},
+								{"label": "subclass_of", "property": "P6"},
+								{"label": "musical_parameter", "property": "P17"},
+								{"label": "used_by", "property": "P16"}
+							]
+
+							}
+}

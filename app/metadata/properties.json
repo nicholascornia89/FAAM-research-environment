@@ -1,0 +1,40 @@
+{
+    "P1": {"label": "label", "type": "string"},
+    "P2": {"label": "aliases", "type": "string"},
+    "P3": {"label": "base_URL", "type": "URL"},
+    "P4": {"label": "wikidata_QID", "type": "string", "source": "Wikidata_QID"},
+    "P5": {
+        "label": "instance_of",
+        "type": "item",
+        "namespace": "Wikidata_PID",
+        "id": "P31"
+    },
+    "P6": {
+        "label": "subclass_of",
+        "type": "item",
+        "namespace": "Wikidata_PID",
+        "id": "P279"
+    },
+    "P7": {
+        "label": "form_of_creative_work",
+        "type": "item",
+        "namespace": "Wikidata_PID",
+        "id": "P7937"
+    },
+    "P8": {
+        "label": "composer",
+        "type": "item",
+        "namespace": "Wikidata_PID",
+        "id": "P86"
+    },
+    "P9": {"label": "arranger", "type": "item", "namespace": "Wikidata_PID", "id": "P5202"},
+    "P10": {"label": "based_on", "type": "item", "namespace": "Wikidata_PID", "id": "P144"},
+    "P11": {"label": "VIAF_ID","type": "string", "source": "VIAF_ID","namespace": "Wikidata_PID", "id": "P214"},
+    "P12": {"label": "IMSLP_ID","type": "string", "source": "IMSLP_ID","namespace": "Wikidata_PID", "id": "P839"},
+    "P13": {"label": "RISM_ID","type": "string", "source": "RISM_ID","namespace": "Wikidata_PID", "id": "P5504"},
+    "P14": {"label": "gender", "type": "item", "namespace": "Wikidata_PID", "id": "P21"},
+    "P15": {"label": "image", "type": "image", "namespace": "Wikidata_PID", "id": "P18"},
+    "P16": {"label": "used_by", "type": "item", "namespace": "Wikidata_PID", "id": "P1535"},
+    "P17": {"label": "musical_parameter", "type": "item"},
+    "P18": {"label": "CPDL_ID","type": "string", "source": "CPDL_ID","namespace": "Wikidata_PID", "id": "P2000"}
+}
