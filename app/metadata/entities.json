@@ -1,0 +1,11 @@
+{
+	"E1": {
+			"data_model_schema": "concept",
+			"label": "concept",
+			"statements": [
+							{"property": "P1", "value":"concept"},
+							{"property": "P2", "value": ["idea","abstract entity"]},
+							{"property": "P4", "value": "Q151885"}
+							]
+	}
+}

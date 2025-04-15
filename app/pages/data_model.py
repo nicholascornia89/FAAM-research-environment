@@ -19,24 +19,20 @@ def get_data_model(metadata_path):
     return properties, data_model
 
 
-def show_button_list_data_model(data_model, properties):
-    for data_type in data_model.keys():
-        name = data_type.replace("_", " ").capitalize()
-        if left_column.button(name, key=data_type):
-            # show statements on right side
-            right_column.write(f"## {name}")
-            df = pd.DataFrame(data_model[data_type]["statements"])
-            right_column.dataframe(df, use_container_width=True)
-
-
 properties, data_model = get_data_model(metadata_path)
 
 st.write("# Data Model")
 
-left_column, right_column = st.columns(2)
+with st.expander("Filter Data Model"):
+    select_list = []
+    for data_type in data_model.keys():
+        select_list.append(data_type.replace("_", " ").capitalize())
 
-show_button_list_data_model(data_model, properties)
+    options = st.multiselect("Filter data model schemas...", select_list)
 
-st.write("# Properties")
-
-st.markdown("**To be continued...**")
+    for selected in options:
+        # convert back to _
+        item = selected.replace(" ", "_").lower()
+        st.write(f"## {selected}")
+        df = pd.DataFrame(data_model[item]["statements"])
+        st.dataframe(df)
